@@ -32,7 +32,6 @@ header{
     margin-bottom: 20px;  
 }
 
-
 nav > ul{
     list-style-type: none;
 }
@@ -106,9 +105,7 @@ a:hover{
 }
 
 
-
-
-
+/* PROPRIETA' IMMAGINI COLONNE */
 .column-img{
     height: 144px ;
     width:100% ;
@@ -117,22 +114,39 @@ a:hover{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.side-column-img{
+
+/* IMMAGINI DELLE COLONNE */
+.left-column-img{
     
     background-image:
         linear-gradient(rgba(54, 54, 54, 0.1 ), rgba(54, 54, 54, 0.1)),
         url(../img/img-1.jpg);
       
 }
+.right-column-img{
+    background-image:
+        linear-gradient(rgba(54, 54, 54, 0.1 ), rgba(54, 54, 54, 0.1)),
+        url(../img/img-4.jpg);
+}
+.center-column-img{
+    background-image:
+        linear-gradient(rgba(54, 54, 54, 0.1 ), rgba(54, 54, 54, 0.1)),
+        url(../img/banner-2.jpg);
+  
+}
+/*                        */
+
 
 
 .left-column p,
-.center-column p{
+.center-column p,
+.right-column p{
     font-size: 13px;
     color: grey;
     
     display: inline-block;
 }
+
 
 .layout-height{
     height:450px;
@@ -143,27 +157,20 @@ a:hover{
     width: 15%;
 }
 
-
-
-
+/* LARGHEZZA E MARGINI DELLA COLONNA CENTRALE */
 .center-column{
     width: calc(70% - 30px);
     margin: 10px 15px;
 }
 
-.center-column-img{
-    background-image:
-        linear-gradient(rgba(54, 54, 54, 0.1 ), rgba(54, 54, 54, 0.1)),
-        url(../img/banner-2.jpg);
-
-
-    
-}
-
-
 
 .float-left{
     float: left;
+}
+
+/* MARGINE DEGLI H4 */
+.clearfix h4{
+    margin: 10px auto;  
 }
 
 .clearfix::after{
@@ -181,5 +188,13 @@ footer{
 .footer-content{
     width:70%;
     height: 100%;
-    background-color: rgb(94, 3, 168);
+    /* background-color: rgb(94, 3, 168); */
+    padding-top: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.hearts{
+    color: red;
+    font-size: 20px;
 }
